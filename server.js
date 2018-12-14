@@ -9,7 +9,7 @@ var path = require('path');
 
 console.log("check-----",process.cwd())
 
-app.post('/profile',(req,res)=>{
+app.post('/api/uploadipfsimage',(req,res)=>{
     const storage = multer.diskStorage({
         limits: {
             fileSize: 1000000,
