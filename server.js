@@ -9,6 +9,10 @@ var path = require('path');
 
 console.log("check-----",process.cwd())
 
+app.get('/',(req,res)=>{
+    res.status(200).send("Hello Ipfs")
+})
+
 app.post('/api/uploadipfsimage',(req,res)=>{
     const storage = multer.diskStorage({
         limits: {
