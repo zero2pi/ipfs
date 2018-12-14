@@ -5,6 +5,8 @@ const ipfsClient = require('ipfs-http-client')
 const ipfs = ipfsClient('localhost', '5001', { protocol: 'http' })
 var fs = require('fs');
 var path = require('path');
+var cors = require('cors')
+app.use(cors())
 
 
 console.log("check-----",process.cwd())
